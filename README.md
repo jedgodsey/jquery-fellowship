@@ -1,19 +1,3 @@
-![GA Cog](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
-
-# Lord of the Rings
-
-![LOTR](https://wallpapercave.com/wp/KzQhmyc.jpg)
-
-## Learning Objectives
-
-- Practice using jQuery to manipulate the DOM
-
----
-We are going to take a trip from the Shire, through Rivendell, across Middle
-Earth, and into the heart of Mordor itself, Mount Doom. Pack up, because we're
-going on an adventure.
-
-## Setup
 
 1. You will be writing your answers inside the `app.js` file located in the folder from this repo: `lotr_homework/js/app.js`
 2. Open the `index.html` file in your browser to test your work. It is located at: `lotr_homework/index.html`
@@ -51,4 +35,3 @@ the popups after you've completed a step, you can check to disable each popup an
 ## Commits
 
 Commit your work after each function is complete and working properly
-
