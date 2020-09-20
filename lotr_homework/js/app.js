@@ -79,12 +79,16 @@ const makeHobbits = () => {
   console.log('Make hobbits');
 
   // 1. display an unordered list of the hobbits in the shire.
+  $('body').append('<ul />');
+  for (let j = 0; j < hobbits.length; j++) {
+    const $liEl = $('<li />');
+    $liEl.attr('id', hobbits[j]);
+    $liEl.html(hobbits[j]);
+    $('#The-Shire').append($liEl);
+  }
 
   // 2. give each hobbit a class of "hobbit"
-
-  // hint: create a 'ul' outside the loop upon which to append the 'li's
-
-  // hint: get 'The-Shire' by using its id
+  $('li').attr('class', 'hobbit');
 
 };
 
