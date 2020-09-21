@@ -222,7 +222,7 @@ const theBalrog = () => {
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
 
 };
-// $('li:contains("Frodo")').append($theRing);
+
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 9 complete - Updated Gandalf"
 
@@ -232,11 +232,11 @@ const theBalrog = () => {
 const hornOfGondor = () => {
 
   // 1. create a pop-up alert that the horn of gondor has been blown
-
+  alert("The horn of Gondor has been blown!")
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
-
+  $('li:contains("Boromir")').css('text-decoration', 'line-through')
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
-
+  $('li:contains("Uruk")').remove();
 };
 
 // COMMIT YOUR WORK
