@@ -164,7 +164,6 @@ const leaveTheShire = () => {
 
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
   let $hobbits = $('#The-Shire > ul');
-  // $('#The-Shire').remove($hobbits);
   $('#Rivendell').append($hobbits);
   // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
 
@@ -179,7 +178,7 @@ const leaveTheShire = () => {
 const beautifulStranger = () => {
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
-
+  $('li:contains("Strider")').text('Aragorn');
   // hint: You can get a list of elements by tag name, such as 'aside'
 
 };
@@ -193,15 +192,19 @@ const beautifulStranger = () => {
 const forgeTheFellowShip = () => {
 
   // 1. create a new div with an id 'the-fellowship'
-
+  let $theFellowship = $('<div />');
+  $theFellowship.attr('id', 'the-fellowship');
   // 2. add an h1 with the text 'The Fellowship' to this new div
-
+  $theFellowship.text('<h1>The Fellowship</h1>');
   // 3. append the fellowship to middle-earth
-
+  $('#middle-earth').append($theFellowship);
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
-
+  let $hobbits = $('#Rivendell > ul');
+  $hobbits.attr('id', 'hobbits');
+  let $buddies = $('aside > ul');
+  $buddies.attr('id', 'buddies');
+  $('#the-fellowship').append($hobbits, $buddies);
 };
-
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 8 complete - The Fellowship is created"
 
