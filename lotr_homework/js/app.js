@@ -120,9 +120,16 @@ $theRing.attr('id', 'the-ring');
 const makeBaddies = () => {
 
   // 1. display an unordered list of baddies in Mordor
-
+const $baddies = $('<ul />');
+$baddies.attr('id', 'baddies');
+$('#Mordor').append($baddies);
+for (let k = 0; k < baddies.length; k++) {
+  let $baddy = $('<li />');
+  $baddy.html(baddies[k]);
+  $('#baddies').append($baddy);
+}
   // 2. give each of the baddies a class of "baddy"
-
+$('#baddies:li').attr('class', 'baddy');
   // 3. remember to append them to Mordor
 };
 
@@ -135,9 +142,13 @@ const makeBaddies = () => {
 const makeBuddies = () => {
 
   // 1. create an aside tag and append it to middle-earth below mordor
+// $('#middle-earth').append('<aside />');
+//   // 2. display an unordered list of buddies in the aside
+// $('aside').append('<ul />');
+// for (let j = 0; j < buddies.length; j++) {
+//   let $buddy = buddies[j];
 
-  // 2. display an unordered list of buddies in the aside
-
+//   $('aside:ul').append
   // 3. give each of the buddies a class of "buddy"
 
 };
