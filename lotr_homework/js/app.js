@@ -129,7 +129,7 @@ for (let k = 0; k < baddies.length; k++) {
   $('#baddies').append($baddy);
 }
   // 2. give each of the baddies a class of "baddy"
-$('#baddies:li').attr('class', 'baddy');
+$('#baddies > li').attr('class', 'baddy');
   // 3. remember to append them to Mordor
 };
 
@@ -163,7 +163,9 @@ const makeBuddies = () => {
 const leaveTheShire = () => {
 
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
-
+  let $hobbits = $('#The-Shire > ul');
+  // $('#The-Shire').remove($hobbits);
+  $('#Rivendell').append($hobbits);
   // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
 
 };
