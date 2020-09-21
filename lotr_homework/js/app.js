@@ -142,15 +142,16 @@ $('#baddies:li').attr('class', 'baddy');
 const makeBuddies = () => {
 
   // 1. create an aside tag and append it to middle-earth below mordor
-// $('#middle-earth').append('<aside />');
-//   // 2. display an unordered list of buddies in the aside
-// $('aside').append('<ul />');
-// for (let j = 0; j < buddies.length; j++) {
-//   let $buddy = buddies[j];
-
-//   $('aside:ul').append
+  $('#middle-earth').append('<aside />');
+  // 2. display an unordered list of buddies in the aside
+  $('aside').append('<ul />');
+  for (let j = 0; j < buddies.length; j++) {
+    let $buddy = $('<li />');
+    $buddy.html(buddies[j]);
+    $('aside > ul').append($buddy);
+  }
   // 3. give each of the buddies a class of "buddy"
-
+  $('aside > ul > li').attr('class', 'buddy');
 };
 
 // COMMIT YOUR WORK
